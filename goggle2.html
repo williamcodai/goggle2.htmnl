@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box ;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 10px;
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        form {
+            width: 800px;
+            /* background-color: yellowgreen; */
+            text-align: center;
+            margin: 0px auto;
+        }
+
+        form div {
+            display: inline-block;
+            border: 1px solid black;
+            padding: 5px 10px;
+            height: 36px;
+            border-radius: 18px;
+
+        }
+
+        form input[type=text] {
+            border: none;
+            outline: none;
+            width: 500px;
+        }
+
+        form input[type=submit] {
+            height: 36px;
+            width: 36px;
+            border-radius: 18px;
+            background-color: rgb(0, 255, 72);
+            border: none;
+            cursor: pointer;
+        }
+        .nav {
+            display: block;
+            height: 60px;
+            padding: 0 20px;
+        }
+
+        .nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 20px;
+            line-height: 60px;
+            float: right;
+        }
+
+        .nav .icon {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        .nav .test {
+            background-color: #ff06f7;
+            padding: 5px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            float: right;
+        }
+        a.profile_picture img{
+            height: 60px;
+            width: 60px;
+            border-radius: 30px;
+            object-fit: cover;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="https://accounts.google.com/ServiceLogin?hl=id&passive=true&continue=https://www.google.com/%3Fhl%3DID&ec=GAZAmgQ" class="test">Sign In</a>
+            <a href="https://www.google.co.id/intl/id/about/products?tab=ih"><span class="icon">📦</span></a>
+            <a href="https://www.google.com/imghp?hl=id&ogbl">Gambar</a>
+            <a href="https://mail.google.com/mail/u/0/">Gmail</a>
+            <a href="" class="profile_picture"><img src="Tokyo.png"></a>
+        </nav>
+    </header>
+    <h1><span style= "color: rgb(108, 88, 147);">Google</span></h1>
+    <form action="https://www.google.com/search" target="_blank">
+        <div>
+            <span class="icon-search">🔎</span>
+            <input type="text" name="q" id="" placeholder="Search here">
+        </div>
+        
+        <input type="submit" value="🔍">
+    </form>
+</body>
+</html>
+ 
